@@ -1,0 +1,3 @@
+server.document-root = "@PATH@"
+
+server.port = 8000
