@@ -35,7 +35,7 @@ All of the tests are run with `NO_CONNECTIONS=100`, `TEST_PAYLOAD=200` and
 
 ##### Over loopback (`127.0.0.1`)
 
-                            Setup                              | Socket creation time | Job setup time |          Download           |  Run time  |  Average memory consumption
+Setup                                                          | Socket creation time | Job setup time |          Download           |  Run time  |  Average memory consumption
 -------------------------------------------------------------- | -------------------- | -------------- | --------------------------- | ---------- | ----------------------------
 Haiku (x86\_64, hrev54280, `KDEBUG_LEVEL 0`) Threaded          |      2.40832 us      |   224.159 us   |  39.9529 s @ 5.02905 MiB/s  |  42.043 s  |          7.01697 MiB
 Haiku (x86\_64, hrev54280, `KDEBUG_LEVEL 0`) `poll()`-based    |      1.5305 us       |   47.7962 us   |  42.1472 s @ 4.75248 MiB/s  |  44.2072 s |          6.92944 MiB
@@ -48,7 +48,7 @@ Linux (x86\_64, 5.6.13) `poll()-based`                         |      17.157 us 
 
 ##### Over QEMU net
 
-                            Setup                              | Socket creation time | Job setup time |          Download           |  Run time  |  Average memory consumption
+Setup                                                          | Socket creation time | Job setup time |          Download           |  Run time  |  Average memory consumption
 -------------------------------------------------------------- | -------------------- | -------------- | --------------------------- | ---------- | ----------------------------
 Haiku (x86\_64, hrev54280, `KDEBUG_LEVEL 0`) Threaded          |      6.69758 us      |   151.929 us   |  184.726 s @ 1.11372 MiB/s  |  185.003 s |          6.37533 MiB
 Haiku (x86\_64, hrev54280, `KDEBUG_LEVEL 0`) `poll()`-based    |      2.46532 us      |   20.209 us    |  122.542 s @ 1.75023 MiB/s  |  124.668 s |          6.94922 MiB
