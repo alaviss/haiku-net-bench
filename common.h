@@ -3,9 +3,8 @@
 
 #define panic(expr, msg, onPanic) \
   { \
-    status_t ret = expr; \
-    if (ret != B_OK) {\
-      printf("%s: %s\n", msg, strerror(ret)); \
+    if (expr) { \
+      perror(msg); \
       onPanic; \
     } \
   }
